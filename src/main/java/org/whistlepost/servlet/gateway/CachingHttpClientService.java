@@ -23,7 +23,7 @@ import java.util.Arrays;
 public class CachingHttpClientService {
 
     @Reference
-    private final CachingHttpClientBuilderFactory httpClientBuilder;
+    private CachingHttpClientBuilderFactory httpClientBuilder;
 
     public CachingHttpClientService(CachingHttpClientBuilderFactory httpClientBuilder) {
         this.httpClientBuilder = httpClientBuilder;

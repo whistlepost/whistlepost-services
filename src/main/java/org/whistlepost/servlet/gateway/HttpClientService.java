@@ -21,7 +21,7 @@ import java.util.Arrays;
 public class HttpClientService {
 
     @Reference
-    private final HttpClientBuilderFactory httpClientBuilder;
+    private HttpClientBuilderFactory httpClientBuilder;
 
     public HttpClientService(HttpClientBuilderFactory httpClientBuilder) {
         this.httpClientBuilder = httpClientBuilder;
