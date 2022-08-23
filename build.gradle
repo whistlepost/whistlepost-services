@@ -45,7 +45,7 @@ dependencies {
 
 scmVersion {
     tag {
-        prefix = 'whistlepost-scripting-groovy-'
+        prefix = 'whistlepost-services-'
     }
     versionCreator 'versionWithBranch'
     branchVersionCreator = ['main': 'simple']
@@ -60,7 +60,7 @@ targetCompatibility = 8
 
 group = 'org.whistlepost'
 version = rootProject.scmVersion.version
-description = 'Support for scripting using the Groovy Markup Template Engine'
+description = 'OSGi services supporting the Whistlepost platform'
 
 ext {
     isReleaseVersion = !version.endsWith("SNAPSHOT")
@@ -97,9 +97,9 @@ publishing {
                 asNode().appendNode('url', 'https://www.whistlepost.org')
 
                 def scmNode = asNode().appendNode('scm')
-                scmNode.appendNode('url', 'https://github.com/whistlepost/whistlepost-scripting-groovy')
-                scmNode.appendNode('connection', 'scm:git@github.com:whistlepost/whistlepost-scripting-groovy.git')
-                scmNode.appendNode('developerConnection', 'scm:git@github.com:whistlepost/whistlepost-scripting-groovy.git')
+                scmNode.appendNode('url', 'https://github.com/whistlepost/whistlepost-services')
+                scmNode.appendNode('connection', 'scm:git@github.com:whistlepost/whistlepost-services.git')
+                scmNode.appendNode('developerConnection', 'scm:git@github.com:whistlepost/whistlepost-services.git')
 
                 def licenseNode = asNode().appendNode('licenses').appendNode('license')
                 licenseNode.appendNode('name', 'Apache License')
